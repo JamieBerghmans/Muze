@@ -1,5 +1,4 @@
 #import <Cephei/HBPreferences.h>
-#include <RemoteLog.h>
 
 @interface CSAdjunctItemView: UIView
 -(void)setSizeToMimic:(CGSize)arg1;
