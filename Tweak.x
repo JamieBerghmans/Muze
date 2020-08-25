@@ -3,8 +3,6 @@
 
 @interface CSAdjunctItemView: UIView
 -(void)setSizeToMimic:(CGSize)arg1;
--(void)_updateSizeToMimic;
--(id)initWithRecipe:(long long)arg1;
 @end
 
 @interface PLPlatter: UIView
