@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>					<string>PSStaticTextCell</string>
+			<key>label</key>				<string>% of original size (lower is smaller)</string>
+		</dict>	
+		<dict>
+			<key>cell</key>					<string>PSSliderCell</string>
+			<key>default</key>				<integer>100</integer>
+            <key>min</key>					<integer>0</integer>
+            <key>max</key>					<integer>100</integer>
+			<key>showValue</key>			<true/>
+			<key>defaults</key>				<string>com.devvix.muzeprefs</string>
+			<key>key</key>					<string>widthPercentage</string>
+			<key>PostNotification</key>		<string>com.devvix.muzeprefs/ReloadPrefs</string>
+			<key>isSegmented</key>			<false/>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Muze</string>
+</dict>
+</plist>

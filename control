@@ -1,0 +1,9 @@
+Package: com.devvix.muze
+Name: Muze
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Resize the lockscreen music player
+Maintainer: Devvix
+Author: Devvix
+Section: Tweaks
+Depends: mobilesubstrate, ws.hbang.common (>= 1.14), preferenceloader
