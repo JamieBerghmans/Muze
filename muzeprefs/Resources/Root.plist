@@ -19,6 +19,36 @@
 			<key>PostNotification</key>		<string>com.devvix.muzeprefs/ReloadPrefs</string>
 			<key>isSegmented</key>			<false/>
 		</dict>
+		<dict>
+			<key>cell</key>					<string>PSStaticTextCell</string>
+			<key>label</key>				<string>Change the X position</string>
+		</dict>	
+		<dict>
+			<key>cell</key>					<string>PSSliderCell</string>
+			<key>default</key>				<integer>0</integer>
+            <key>min</key>					<integer>-100</integer>
+            <key>max</key>					<integer>100</integer>
+			<key>showValue</key>			<true/>
+			<key>defaults</key>				<string>com.devvix.muzeprefs</string>
+			<key>key</key>					<string>xPos</string>
+			<key>PostNotification</key>		<string>com.devvix.muzeprefs/ReloadPrefs</string>
+			<key>isSegmented</key>			<false/>
+		</dict>
+		<dict>
+			<key>cell</key>					<string>PSStaticTextCell</string>
+			<key>label</key>				<string>Change the Y position</string>
+		</dict>	
+		<dict>
+			<key>cell</key>					<string>PSSliderCell</string>
+			<key>default</key>				<integer>0</integer>
+            <key>min</key>					<integer>-100</integer>
+            <key>max</key>					<integer>100</integer>
+			<key>showValue</key>			<true/>
+			<key>defaults</key>				<string>com.devvix.muzeprefs</string>
+			<key>key</key>					<string>yPos</string>
+			<key>PostNotification</key>		<string>com.devvix.muzeprefs/ReloadPrefs</string>
+			<key>isSegmented</key>			<false/>
+		</dict>
 	</array>
 	<key>title</key>
 	<string>Muze</string>

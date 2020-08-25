@@ -9,6 +9,8 @@
 
 HBPreferences * pfs;
 NSInteger widthPercentage;
+NSInteger xPos;
+NSInteger yPos;
 float screenWidth = 0;
 float screenHeight = 0;
 
@@ -22,13 +24,15 @@ float screenHeight = 0;
 
 -(void) layoutSubviews {
 	%orig;
-	[self setFrame:CGRectMake(self.frame.origin.x, self.frame.origin.y, screenWidth / 100 * widthPercentage, self.frame.size.height)];
+	[self setFrame:CGRectMake(xPos + self.frame.origin.x, yPos + self.frame.origin.y, screenWidth / 100 * widthPercentage, self.frame.size.height)];
 }
 %end
 
 %ctor {
 	pfs = [[HBPreferences alloc] initWithIdentifier:@"com.devvix.muzeprefs"];
 	[pfs registerInteger:&widthPercentage default:100 forKey:@"widthPercentage"];
+	[pfs registerInteger:&xPos default:100 forKey:@"xPos"];
+	[pfs registerInteger:&yPos default:100 forKey:@"yPos"];
 
 	%init;
 }
